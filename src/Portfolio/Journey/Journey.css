@@ -1,0 +1,25 @@
+.jrny{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/*background-color: rgb(82, 78, 78);*/
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+
+@media  screen and (max-width: 500px) {
+    .jrny{
+      
+    width: 130%;
+   
+    margin-bottom: 30px;
+    }
+    
+
+
+
+    }

@@ -1,0 +1,49 @@
+.skl{
+
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/*background-color: rgb(82, 78, 78);*/
+
+margin-top: 30px;
+margin-bottom: 30px;
+/*display: flex;
+flex-direction: column;*/
+
+}
+
+
+.skil{
+width: 40%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+/*margin-left: auto;
+margin-right: auto;
+*/
+}
+
+/*.sklcntnt{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+*/
+
+@media  screen and (max-width: 500px) {
+.skl{
+
+width:130%;
+margin-bottom: 30px;
+}
+
+.skil{
+    width:50%;
+}
+}

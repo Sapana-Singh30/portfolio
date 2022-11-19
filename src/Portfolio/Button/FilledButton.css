@@ -1,0 +1,26 @@
+.fldbtn {
+
+
+    color: black;
+    border: 2px solid black;
+    width: 120px;
+    background-color: #15f4ee;
+    margin-top: 5px;
+    margin: 15px solid #15f4ee;
+    padding: 11px;
+    font-weight: bold;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 1.5s;
+    text-shadow: 0 0 0 0.45px currentColor;
+    margin-left: 22px;
+    text-align: center;
+}
+
+.fldbtn:hover {
+
+    box-shadow: 0 2px 3px 0 #15f4ee inset, 0 2px 3px 0 #15f4ee;
+    /* 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+    text-shadow: 0 0 5px #15f4ee,0 0 5px #15f4ee;*/
+
+}

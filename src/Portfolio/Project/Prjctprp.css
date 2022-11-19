@@ -1,0 +1,46 @@
+.prjctprp {
+   
+    
+    border: 2px solid #15f4ee;
+    border-radius: 15px;
+    background-color: black;
+    height: 280px;
+    width: 280px;
+    margin-left: 30px;
+    margin-top:30px;    
+    display: flex;
+    flex-direction: column;
+}
+
+.prjctprp:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+
+}
+
+
+
+.prjctimg {
+
+    height: 160px;
+    width: 80px;
+
+}
+
+.prjctimg img {
+    height: 160px;
+    width: 275px;
+    padding: 15px;
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+
+
+
+.prjctcntnt {
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,38 @@
+.cntctbx{
+height: 100px;
+width: 170px;
+background-color: #15f4ee;
+border-radius: 10px;
+color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+line-height: 20px;
+margin-top: 20px;
+/*margin-left: 20px;*/
+}
+
+
+.cntctbx h4{
+color: black;
+}
+
+.cntctbx p{
+color: rgb(255, 102, 0);
+}
+
+@media  screen and (max-width: 900px) {
+    .cntctbx{
+    width:350px;
+  
+    }
+
+}
+
+@media  screen and (max-width: 500px) {
+    .cntctbx{
+    width:350px;
+  
+    }
+
+}

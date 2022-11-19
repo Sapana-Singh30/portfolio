@@ -1,0 +1,132 @@
+.home {
+    
+    display: flex;
+    flex-direction: row;
+    height: 450px;
+    width:70%;
+    margin:auto;
+    justify-content: space-around;
+    margin-top: 90px;
+
+}
+
+
+.cntnt {
+    /*position: absolute;
+    margin-top: 200px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ margin-top:0px auto;  
+    /*position: relative;
+   margin-top: -900px;
+    margin-left: 200px;*/
+
+}
+
+
+.socialmedia p {
+    margin-top: 5px;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.socialmedia a {
+    color: aquamarine;
+}
+
+.socialmedia a:hover {
+    color: rgb(67, 190, 149);
+}
+
+
+.socialmedia span {
+    color: #15f4ee;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+
+
+.button {
+    display: flex;
+    margin-top: 12px;
+}
+
+
+.profilepic {
+    position: relative;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 0px 0px white;
+    height: 310px;
+    width: 280px;
+    border-radius: 50%;
+    margin: 0 0px 0 100px;
+    margin-top: 30px;
+   margin-left: 0px;
+}
+
+
+.profilepic-bcg {
+    height: 92%;
+    width: 92%;
+    background-image: url("../Portfolio/pics/nw.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.profilepic-bcg:hover {
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+
+
+@media  screen and (max-width: 960px) {
+  .home{
+    width: 70%;
+    margin: auto;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    align-items: center;
+}
+     
+     /* margin-left: 50px;
+  }*/
+.socialmedia p{
+
+font-size: 40px;
+
+}
+ /* .profilepic{
+    justify-content: center;
+    align-items: center;
+  }*/
+}
+
+@media  screen and (max-width: 500px) {
+.home{
+    
+        width: 130%;
+        margin: auto;
+        
+ margin-bottom: 50px;       
+ }
+ .profilepic{
+height:310px;
+ }
+
+
+
+
+}
