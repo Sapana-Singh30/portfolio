@@ -56,7 +56,7 @@ color: rgb(41, 39, 39);
 
 @media  screen and (max-width: 500px) {
     .footer{
-    width:130%;
+    /* width:130%; */
     margin: auto;
     margin-bottom: 30px;
     }

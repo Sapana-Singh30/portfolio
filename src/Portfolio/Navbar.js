@@ -1,71 +1,52 @@
 import './Navbar.css';
 import React, { useState } from 'react';
-import { AiOutlineMenu }  from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { FaUserGraduate } from 'react-icons/fa';
 
 
 const Navbar = () => {
 
-const [navLinkOpen, navLinkToggle] = useState(false);
+    const [click, setClick] = useState(false);
+    const handlemenuClick = () => {
+        console.log(click)
+       
+        if (click) {
+            document.getElementsByClassName("mobile_navbar_container")[0].style.display = "none";
+        }
+        else {
+            document.getElementsByClassName("mobile_navbar_container")[0].style.display = "flex";
+        }
 
-    const handleNavLinksToggle = () => {
-        navLinkToggle(!navLinkOpen);
-
-    };
-
-    const renderClasses = () => {
-        let classes="navlinks";
-
-        if(navLinkOpen){    
-            classes ='active';
-            }
-            return classes;
+        setClick(!click);
     }
 
 
     return (
-<nav>
+        <div className='navbar_container'>
+
+            <div className='lappy_navbar'>
+                <div className='logo'>
+                    < FaUserGraduate />
+                </div>
+                <ul className='navbar' id="xyz" >
+
+                    <li className='link'><a href="#Home">Home</a></li>
+                    <li className="link"><a href="#About">AboutMe</a></li>
+                    <li className="link"><a href="#Skills">MySkills</a></li>
+                    <li className="link"><a href="#Journey">Journey</a></li>
+                    <li className="link"><a href="#Project">Projects</a></li>
+                    <li className="link"><a href="#Contact">ContactMe</a></li>
 
 
-<div className='logo'>
-    < FaUserGraduate />
-</div>
-<ul className={renderClasses()} id="xyz" >
+                </ul>
+                <div className='hamburger-menu' onClick={handlemenuClick}>
 
-    <li className='link'><a href="#Home">Home</a></li>
-    <li className="link"><a href="#About">AboutMe</a></li>
-    <li className="link"><a href="#Skills">MySkills</a></li>
-    <li className="link"><a href="#Journey">Journey</a></li>
-    <li className="link"><a href="#Project">Projects</a></li>
-    <li className="link"><a href="#Contact">ContactMe</a></li>
+                    < AiOutlineMenu />
+                </div>
 
-
-</ul>
-<div onClick={handleNavLinksToggle} className='hamburger-toggle'>
-    
-       < AiOutlineMenu />
-</div>
-
-
-
-</nav>
-        
-
-    );
-}
-
-export default Navbar;
-
-
-/*<i className='fas fa-bars fa-lg'></i>*/
-
-/*<nav>
-
-
-            <div className='logo'>
-                
             </div>
-            <ul className={renderClasses()} id="xyz" >
+            <div className='mobile_navbar_container'>
+            <ul className="mobile_navbar" id="xyz" >
 
                 <li className='link'><a href="#Home">Home</a></li>
                 <li className="link"><a href="#About">AboutMe</a></li>
@@ -74,13 +55,19 @@ export default Navbar;
                 <li className="link"><a href="#Project">Projects</a></li>
                 <li className="link"><a href="#Contact">ContactMe</a></li>
 
-
+               
             </ul>
-            <div onClick={handleNavLinksToggle} className='hamburger-toggle'>
-                
-                   < AiOutlineMenu />
             </div>
 
 
 
-        </nav>*/
+        </div>
+
+
+    );
+}
+
+export default Navbar;
+
+
+

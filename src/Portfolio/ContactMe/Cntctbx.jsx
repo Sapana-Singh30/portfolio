@@ -6,9 +6,9 @@ const Cntctbx = (props) => {
 return(
 <div className='cntctbx'>
 <span>{props.sin}</span>
-<h3>{props.tl}</h3>
-<h4>{props.ln}</h4>
-<p>{props.msg}</p>
+<p className="Contact_title">{props.tl}</p>
+<p className="Contact_link">{props.ln}</p>
+<p className="Contact_msg">{props.msg}</p>
 
 
 </div>

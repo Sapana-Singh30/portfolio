@@ -1,49 +1,73 @@
-.skl{
+.skl {
 
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-/*background-color: rgb(82, 78, 78);*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
-margin-top: 30px;
-margin-bottom: 30px;
-/*display: flex;
-flex-direction: column;*/
 
 }
 
 
-.skil{
-width: 40%;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-around;
-/*margin-left: auto;
-margin-right: auto;
-*/
-}
-
-/*.sklcntnt{
-
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
+.skil {
+    
+    /* padding: 2rem; */
+    /* border: 2px solid red; */
+    column-gap: 2rem;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
-*/
 
-@media  screen and (max-width: 500px) {
-.skl{
-
-width:130%;
-margin-bottom: 30px;
+.skil_icon {
+    width: 40%;
+    
 }
 
-.skil{
-    width:50%;
+
+/* #skil_ico{
+    width:40%;
+} */
+
+@media screen and (max-width: 800px) {
+    .skl {
+
+        /* width:130%; */
+        margin-bottom: 30px;
+    }
+
+    .skil {
+             column-gap: 1rem
+    }
+
+
+
+    .skil_icon {
+        width: 20%;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .skl {
+
+        /* width:130%; */
+        margin-bottom: 30px;
+    }
+
+    .skil {
+             column-gap: 1rem
+    }
+
+
+
+    .skil_icon {
+        width: 20%;
+    }
 }

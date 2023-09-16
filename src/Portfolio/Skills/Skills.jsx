@@ -2,52 +2,50 @@ import './Skills.css';
 import React from 'react';
 import Skl from './skl';
 import Header from '../Header/Header';
-import { AiFillHtml5 }  from 'react-icons/ai';
-import { IoLogoCss3, IoLogoJavascript}  from 'react-icons/io';
-import { FaJava, FaReact , FaGithub}  from 'react-icons/fa';
-import { SiMysql , SiMicrosoftazure , SiVisualstudiocode }  from 'react-icons/si';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { IoLogoCss3, IoLogoJavascript } from 'react-icons/io';
+import { FaReact, FaGithub, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiVisualstudiocode } from 'react-icons/si';
+
 
 
 
 const Skills = (props) => {
-let ht = < AiFillHtml5 />
-let cs = < IoLogoCss3 />
-let js = < IoLogoJavascript />
-let ja = < FaJava />
-let sq = < SiMysql />
-let rct = < FaReact />
-let az = < SiMicrosoftazure />
-let vs = < SiVisualstudiocode />
-let gt = < FaGithub />
+    let ht = < AiFillHtml5 />
+    let cs = < IoLogoCss3 />
+    let js = < IoLogoJavascript />
+    let mongo = < SiMongodb />
+    let express = < SiExpress />
+    let rct = < FaReact />
+    let node = < FaNodeJs />
+    let vs = < SiVisualstudiocode />
+    let gt = < FaGithub />
 
-return (
-<div className='skl' id='Skills'>
+    return (
+        <div className='skl' id='Skills'>
 
-                <div className='skill-header'>
-                    <Header title="Skills" qs="My Strength" />
-                    </div> 
+            <div className='skill-header'>
+                <Header title="Skills" qs="My Strength" />
+            </div>
 
-<div className='skil'>
+            <div className='skil'>
 
-    <Skl title="HTML" li={ht} />
-    <Skl title="Javascript" li={js} />
-    <Skl title="CSS" li={cs} /> 
-    <Skl title="ReactJs" li={rct} />
-    <Skl title="Azure" li={az} />
-    <Skl title="Java" li={ja} />
-    <Skl title="VisualStudio" li={vs} />
-    <Skl title="SQL" li={sq} />
-    <Skl title="Github" li={gt} />
-   
-    
-    
-</div>
-</div>
-);
+                <Skl id="skil_ico" className="skil_icon" title="HTML" li={ht} />
+                <Skl className="skil_icon" title="Javascript" li={js} />
+                <Skl className="skil_icon" title="CSS" li={cs} />
+                <Skl className="skil_icon" title="ReactJs" li={rct} />
+                <Skl className="skil_icon" title="NodeJs" li={node} />
+                <Skl className="skil_icon" title="ExpressJs" li={express} />
+                <Skl className="skil_icon" title="VisualStudio" li={vs} />
+                <Skl className="skil_icon" title="MongoDB" li={mongo} />
+                <Skl className="skil_icon" title="Github" li={gt} />
+
+
+
+            </div>
+        </div>
+    );
 }
 
 export default Skills;
 
-/* <Skills /> */
-
-/*<div className='sklcntnt'></div> */

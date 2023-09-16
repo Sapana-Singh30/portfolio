@@ -20,7 +20,7 @@ const About = () => {
                     <p>My Name is <span>Sapana Singh</span>,I belong from Sonebhadra,UP, INDIA.
                         I am a tech enthusiast who is always eager to learn more tech stuffs.
                         My core interest is to develop an effective and comprehensive solutions using my skills.
-                        Currently I am working in TCS as a <span>Frontend Developer</span>.</p>
+                        Currently I am working in TCS as a <span>Software Developer</span>.</p>
                     {/*<div className='abt-btn'>
     <a href=' '>
 <div className='fldbtn'>Skills</div>

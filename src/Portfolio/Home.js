@@ -12,7 +12,6 @@ const Home = () => {
             <div className='cntnt'>
                 <div className='socialmedia'>
 
-                  
                     <p>Hello, I am Sapana</p>
                     <span>Enthusiatic Fullstack Developer</span>
                 </div>

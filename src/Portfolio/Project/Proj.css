@@ -1,0 +1,29 @@
+.proj {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj_header {
+    /* border: 2px solid #008000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proj_cards {
+    width: 75%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+    .proj {
+        /* width: 130%; */
+    }
+}

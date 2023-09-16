@@ -1,6 +1,4 @@
-.sklbox{
-    /*height: 150px;
-    */
+.sklbox {
     width: 150px;
     margin-top: 40px;
     background-color: black;
@@ -8,40 +6,67 @@
     border-radius: 15%;
     display: flex;
     flex-direction: column;
-    /*background-image: url('../pics/ht.jpg');
-background-repeat: no-repeat;
-    background-position: center;*/
+
+
 }
 
-.sklbox:hover{
+.sklbox:hover {
     transform: scale(1.05);
     transition: 1s ease-out;
 }
 
-.sklbox h2{
+.sklbox p {
+    font-weight: bold;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+    font-size: 1.5rem;
 }
 
 
 
-.sklbox span{
+.sklbox span {
     margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-color: #15f4ee;
-font-size: 100px;
+    color: #15f4ee;
+    font-size: 100px;
 
 }
 
 
 
 
-.sklbox span:hover{
+@media screen and (max-width: 800px) {
+    .sklbox {
+        width: 40%;
+    }
 
+    .sklbox span {
+
+        font-size: 80px;
+
+    }
+    .sklbox p{
+        font-size: 1.2rem; 
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .sklbox {
+        width: 40%;
+    }
+
+    .sklbox span {
+
+        font-size: 60px;
+
+    }
+
+    .sklbox p{
+        font-size: 0.9rem; 
+    }  
+}

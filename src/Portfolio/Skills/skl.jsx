@@ -5,7 +5,7 @@ import './skl.css';
 const Skl = (props) =>{
 return(
 <div className='sklbox'>
-<h2>{props.title}</h2>
+<p>{props.title}</p>
 <span>{props.li}</span> 
 </div>
 
@@ -15,4 +15,3 @@ return(
 
 export default Skl;
 
-/*<p>{props.li}</p> */
