@@ -45,11 +45,13 @@
     }
 
     .logo{
+        font-weight: bold;
         font-size: 2rem;
         color: white;
     }
 
     .hamburger-menu{
+        font-weight: bold;
         font-size: 2rem;
         color: white;
     }
