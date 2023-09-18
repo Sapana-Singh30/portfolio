@@ -3,7 +3,7 @@ import React from 'react';
 /*import { AiFillFacebook, AiFillInstagram, AiFillYoutube, AiFillTwitterSquare } from 'react-icons/ai';*/
 import TransparentButton from '../Portfolio/Button/TransparentButton';
 import FilledButton from '../Portfolio/Button/FilledButton';
-import cv from '../Portfolio/pics/cv.pdf';
+import cv from '../Portfolio/pics/Sapana_Resume.pdf';
 
 const Home = () => {
 
